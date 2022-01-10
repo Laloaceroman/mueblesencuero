@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Muebles en Cuero</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=21271" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=21271" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://127.0.0.1:5501/frontend";
+      
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__bar">
+                  <div class="header__logo"><a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="materials.html">Materiales</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                  </ul>
+                  <div class="header__button"> <a href="contact.html" class="btn">Contacto </a></div>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+              <div class="header__item"><a href="contact.html" class="btn">Contacto</a></div>
+              <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-whatsapp"></span></a></div>
+              <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-instagram"></span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__bg">
+          <div class="bg"><img src="img/uploads/11.jpeg"></div>
+        </div>
+        <div class="section__wrap section__wrap--header">
+          <div class="section__body">
+            <div class="section__content">
+              <h1 class="section__title">Preguntas frecuentes</h1>
+              <p class="section__description">Purus platea taciti inceptos sagittis cubilia sociosqu ac platea suscipit. Torquent est a inceptos nibh eleifend vitae platea fames quisque elit sem mollis conubia sapien.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--faq">
+        <div class="section__wrap section--md">
+          <div class="section__panel wp">
+            <div class="faq">
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto tiempo de garantía tienen los productos?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Primis hac libero porttitor malesuada lectus netus habitasse mi aptent. Vestibulum felis tempus in tincidunt magna ligula platea massa commodo nibh eros dictum fermentum pulvinar.
+                    </p>
+                    <p>Sem metus libero faucibus et nostra platea imperdiet donec habitasse. Tincidunt aliquam auctor elit a id nisi non orci cursus colus metus non eleifend ullamcorper.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Como debo cuidar mi producto?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Vivamus blandit fusce blandit etiam nibh conubia ornare dictumst justo. Odio felis pulvinar blandit condimentum convallis colus ut quisque tristique nam molestie lectus quisque ornare.
+                    </p>
+                    <p>Eget viverra taciti tristique viverra ultrices aliquet habitant nunc luctus. Dui nulla maecenas suscipit metus rutrum a eros nunc augue himenaeos consequat dapibus ad eget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto demora la confección?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Eget donec purus a tristique hendrerit ultricies pulvinar sociosqu fermentum. Mi habitant vestibulum luctus mattis adipiscing tortor a cras consequat auctor curae neque nunc eget.
+                    </p>
+                    <p>Convallis dapibus diam tristique sodales elementum vivamus nullam eros tristique. Etiam id laoreet curae velit elit fames feugiat hac quam litora sociosqu elit morbi bibendum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto demora el despacho?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Dictumst curabitur ut sodales vehicula fusce turpis gravida est purus. Venenatis feugiat egestas at taciti commodo et habitant sem sodales sociosqu ac etiam quis condimentum.
+                    </p>
+                    <p>Curabitur at aliquam placerat sem taciti laoreet pretium felis pulvinar. Suscipit vulputate posuere pellentesque magna viverra pharetra facilisis conubia leo torquent lacus lobortis ultricies nunc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto tiempo de garantía tienen los productos?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Vestibulum iaculis facilisis laoreet aenean odio aliquet nunc elementum torquent. Duis litora ultrices tempor pulvinar tempor vivamus tellus odio dapibus sollicitudin blandit habitant id fusce.
+                    </p>
+                    <p>Enim non sollicitudin arcu ultricies ad pulvinar consectetur integer duis. Conubia odio per pulvinar aliquet cras varius consectetur cubilia consequat interdum lectus tellus malesuada volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Como debo cuidar mi producto?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Adipiscing proin quam quisque ad primis volutpat aliquam sapien nulla. Accumsan euismod aptent sodales sodales nisi curabitur vulputate nibh cras aptent augue magna dictumst suspendisse.
+                    </p>
+                    <p>Nisl sociosqu cursus id iaculis nullam curabitur eu donec urna. Maecenas non diam iaculis etiam laoreet accumsan quam nostra vitae fermentum facilisis massa magna curabitur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto demora la confección?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Malesuada eros nec fusce cras per fermentum senectus nisl hendrerit. Lacus consequat habitasse aenean pharetra dui volutpat aliquam diam molestie urna nulla torquent ante ut.
+                    </p>
+                    <p>Euismod senectus viverra facilisis vestibulum vitae facilisis felis sapien ullamcorper. Vehicula aliquam rutrum sed ligula feugiat eget suscipit et id donec vestibulum tempus consectetur suspendisse.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto demora el despacho?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Sagittis quam ligula sem interdum neque hac donec adipiscing congue. Duis sapien semper per et varius porta bibendum himenaeos praesent nullam aptent ornare himenaeos himenaeos.
+                    </p>
+                    <p>Ultrices auctor maecenas viverra primis taciti colus malesuada praesent dapibus. Rhoncus duis nisl sapien vivamus consequat feugiat augue donec lobortis curabitur purus lacus lacinia condimentum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto tiempo de garantía tienen los productos?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Laoreet mauris lobortis nostra dictumst fusce ut morbi pretium facilisis. Erat sodales condimentum nisl etiam tempor porta posuere etiam aliquet quisque elementum vel ultricies urna.
+                    </p>
+                    <p>Feugiat phasellus donec purus facilisis aptent cursus nisl dui vestibulum. Praesent mi eu egestas congue tempor sollicitudin nostra ullamcorper metus magna nulla euismod mollis colus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Como debo cuidar mi producto?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Ullamcorper interdum varius diam duis curabitur a aliquet vehicula aenean. Etiam ultrices porta convallis ultricies curabitur lobortis in libero vehicula cursus libero fringilla non nunc.
+                    </p>
+                    <p>Molestie neque nisl arcu cubilia tempus fringilla metus bibendum suscipit. Euismod tempus etiam nisl sed ultricies elementum vestibulum facilisis integer congue pharetra etiam nam aenean.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto demora la confección?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Blandit sollicitudin tincidunt vivamus lacus libero nam sollicitudin faucibus volutpat. Vehicula dapibus curae congue congue integer neque at lacus adipiscing aliquam interdum consequat primis urna.
+                    </p>
+                    <p>Justo rhoncus semper inceptos quam ornare semper nulla fames velit. Tincidunt varius interdum sapien volutpat ligula curae blandit nisl ultricies nisl commodo suscipit elementum aliquam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>¿Cuanto demora el despacho?</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p>Sollicitudin aliquam et nec nisl lacus facilisis fringilla erat tellus. Praesent tincidunt ultrices pulvinar curae cubilia congue fringilla hac class faucibus aenean ultrices nullam tortor.
+                    </p>
+                    <p>Nibh sapien bibendum vitae sagittis leo nec mattis proin curae. Mauris nunc ornare netus tortor curae tincidunt faucibus aenean tempus dictumst dui pellentesque euismod fames.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="preview">
+        <div class="preview__back"></div>
+        <div class="preview__front">
+          <div class="preview__box">
+            <div class="preview__close"><span class="fa fa-close"></span></div>
+            <div class="preview__img"><img src="img/products/5.jpeg"></div>
+            <div class="preview__header">
+              <div class="preview__header__content"><span>Sitial</span>
+                <h2>Sitial Victoriano</h2>
+                <p>Leo eu primis pulvinar lobortis neque pulvinar urna odio placerat. Mauris quisque litora ultrices orci consequat nam fringilla convallis quisque. Laoreet curabitur congue curabitur pellentesque aliquet arcu ultrices malesuada quam. Habitant suspendisse in sagittis pulvinar hac nisl elementum posuere varius cras eu placerat justo erat.
+                </p>
+              </div>
+              <div class="preview__header__action">
+                <p class="preview__price">$850.000 - $1.250.000</p><a href="single-product.html" class="btn btn--transparent">Ver más</a>
+              </div>
+            </div>
+            <div class="preview__body">
+              <div class="preview__flex">
+                <div class="preview__form">
+                  <h4>Pedir cotización</h4>
+                  <div class="cols"> 
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Nombre</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Apellido </div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Teléfono</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Email</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Dirección</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Color del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">Rojo</option>
+                            <option value="2">Verde</option>
+                            <option value="3">Azul</option>
+                            <option value="4">Morado</option>
+                            <option value="5">Gris</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Material del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">Montana choc</option>
+                            <option value="2">Riga oliva</option>
+                            <option value="3">Leon plaster</option>
+                            <option value="4">Montana camel</option>
+                            <option value="5">Fargo verde</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Tamaño del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">1.80 x 2.56</option>
+                            <option value="2">1.90 x 2.80</option>
+                            <option value="3">2 x 3</option>
+                            <option value="4">2.15 x 3.20</option>
+                            <option value="5">2.30 x 3.45</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form__element"> 
+                        <div class="form__title">Mensaje</div>
+                        <div class="form__input"> 
+                          <textarea type="text" name="#"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form__button"> 
+                        <button class="btn">Solicitar cotización</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__bg">
+        <div class="bg"><img src="img/uploads/footer_bg.jpeg"></div>
+      </div>
+      <div class="footer__wrap">
+        <div class="footer__banner">
+          <div class="footer__body">
+            <h3 class="h2 footer__title">Si tienes dudas o consultas, comunicate con nosotros</h3>
+            <div class="footer__button"> <a href="contact.html" class="btn">Contactar</a></div>
+          </div>
+        </div>
+        <div class="footer__links footer_links--primary">
+          <div class="cols">
+            <div class="footer__flex">
+              <div class="col-sm-6 col-md-4">
+                <div class="footer__logo"><img src="img/icons/logo-lareina.png"></div>
+                <div class="footer__links__contact">
+                  <p class="footer__description">Para consultas escríbenos en nuestra sección de Contacto o al télefono</p>
+                  <p class="footer__description">(56 2) 2555 3795<span class="fa fa-phone"></span></p>
+                  <p class="footer__description">(56 2) 2556 5988<span class="fa fa-phone"></span></p>
+                  <p class="footer__description">lareina@mueblesencuero.cl<span class="fa fa-envelope"></span></p>
+                  <p class="footer__description">Carmen 2001, Santiago, Chile<span class="fa fa-map"></span></p>
+                </div>
+                <div class="footer__social">
+                  <ul>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="footer__links__list">
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="#">Materiales</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div data-lng="-70.6355988" data-lat="-33.471392" class="footer__map footer--map">
+                  <div class="footer__map__map">
+                    <div id="map"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="footer__info">
+                <p class="footer__description">© Copyright 2021 - Cueros La Reina. Todos los derechos reservados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

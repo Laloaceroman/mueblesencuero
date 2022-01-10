@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Muebles en Cuero</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=82242" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=82242" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://127.0.0.1:5501/frontend";
+      
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__bar">
+                  <div class="header__logo"><a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="materials.html">Materiales</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                  </ul>
+                  <div class="header__button"> <a href="contact.html" class="btn">Contacto </a></div>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+              <div class="header__item"><a href="contact.html" class="btn">Contacto</a></div>
+              <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-whatsapp"></span></a></div>
+              <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-instagram"></span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__img"><img src="img/products/1.jpeg"></div>
+        <div class="section__wrap section__wrap--header">
+          <div class="section__body">
+            <div class="section__content">
+              <h1 class="section__title">Sitial Victoriano</h1>
+              <p class="section__description">Platea egestas porttitor hac congue molestie ultrices feugiat blandit purus. Scelerisque tellus vivamus sollicitudin facilisis vel urna aenean lacus nam gravida eleifend sollicitudin per ullamcorper.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--content section--light"> 
+        <div class="section__wrap section--md">
+          <div class="section__body">
+            <div class="section__content section--center">
+              <h2 class="section__title">Descripción del producto </h2>
+              <p class="section__description">Faucibus mollis euismod phasellus lectus nibh nisl sem ligula vulputate. Condimentum arcu arcu tristique sollicitudin platea ut mattis netus sodales. Tempus aliquam adipiscing per non magna aliquam litora platea dapibus. Nostra augue curabitur aliquam consectetur maecenas vitae sem ullamcorper mi. Adipiscing interdum ligula lectus ullamcorper molestie magna nec pellentesque non. Lacinia auctor senectus colus porttitor aliquet accumsan condimentum ultrices phasellus. Mattis eleifend malesuada cubilia luctus lacus quisque conubia urna nisi. Pulvinar tortor ut blandit vehicula adipiscing aliquam lectus turpis class torquent nibh lacinia dictumst netus.
+              </p>
+              <p class="section__description">Integer nisl nam imperdiet mattis netus enim fusce vitae tellus. Ornare elementum etiam at mauris quisque risus sociosqu massa risus. Sodales etiam in platea sagittis mollis inceptos nunc interdum suspendisse. Nulla conubia rutrum odio fames est habitant aenean congue consequat. Nunc placerat mi est vel egestas cubilia primis per primis. Velit ultrices at pulvinar orci risus bibendum aptent inceptos orci mattis torquent mi eleifend consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--gallery"> 
+        <div class="section__wrap">
+          <div class="section__header"> 
+            <h2 class="section__title">Galería</h2>
+          </div>
+          <div class="section__body"> 
+            <div class="section__slider">
+              <div class="slider"> 
+                <div class="slides"> 
+                  <div class="slide"> 
+                    <div class="section__bg"> 
+                      <div class="bg"> <img src="img/gallery/1.jpeg"></div>
+                    </div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="section__bg"> 
+                      <div class="bg"><img src="img/gallery/2.jpeg"></div>
+                    </div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="section__bg"> 
+                      <div class="bg"><img src="img/gallery/3.jpeg"></div>
+                    </div>
+                  </div>
+                  <div class="slide"> 
+                    <div class="section__bg"> 
+                      <div class="bg"><img src="img/gallery/4.jpeg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--cotizador section--light"> 
+        <div class="section__wrap section--sm"> 
+          <div class="section__header"> 
+            <h2 class="section__title">Pedir cotización</h2>
+          </div>
+          <div class="section__body"> 
+            <div class="section__form"> 
+              <div class="cols"> 
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Nombre</div>
+                    <div class="form__input"> 
+                      <input type="text" name="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Apellido </div>
+                    <div class="form__input"> 
+                      <input type="text" name="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Teléfono</div>
+                    <div class="form__input"> 
+                      <input type="text" name="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Email</div>
+                    <div class="form__input"> 
+                      <input type="text" name="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Dirección</div>
+                    <div class="form__input"> 
+                      <input type="text" name="#">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Color del producto</div>
+                    <div class="form__input"> 
+                      <select name="option">
+                        <option value="1">Rojo</option>
+                        <option value="2">Verde</option>
+                        <option value="3">Azul</option>
+                        <option value="4">Morado</option>
+                        <option value="5">Gris</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Material del producto</div>
+                    <div class="form__input"> 
+                      <select name="option">
+                        <option value="1">Montana choc</option>
+                        <option value="2">Riga oliva</option>
+                        <option value="3">Leon plaster</option>
+                        <option value="4">Montana camel</option>
+                        <option value="5">Fargo verde</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <div class="form__element"> 
+                    <div class="form__title">Tamaño del producto</div>
+                    <div class="form__input"> 
+                      <select name="option">
+                        <option value="1">1.80 x 2.56</option>
+                        <option value="2">1.90 x 2.80</option>
+                        <option value="3">2 x 3</option>
+                        <option value="4">2.15 x 3.20</option>
+                        <option value="5">2.30 x 3.45</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form__element"> 
+                    <div class="form__title">Mensaje</div>
+                    <div class="form__input"> 
+                      <textarea type="text" name="#"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form__button"> 
+                    <button class="btn">Solicitar cotización</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="preview">
+        <div class="preview__back"></div>
+        <div class="preview__front">
+          <div class="preview__box">
+            <div class="preview__close"><span class="fa fa-close"></span></div>
+            <div class="preview__img"><img src="img/products/5.jpeg"></div>
+            <div class="preview__header">
+              <div class="preview__header__content"><span>Sitial</span>
+                <h2>Sitial Victoriano</h2>
+                <p>Non eros phasellus varius arcu mi vitae litora neque scelerisque. Feugiat luctus maecenas nisi vulputate ornare arcu rutrum facilisis nulla. Colus mollis aliquet vulputate inceptos neque libero commodo vel sollicitudin. Nunc elit lobortis laoreet laoreet metus fermentum tortor platea neque aenean odio auctor pellentesque ante.
+                </p>
+              </div>
+              <div class="preview__header__action">
+                <p class="preview__price">$850.000 - $1.250.000</p><a href="single-product.html" class="btn btn--transparent">Ver más</a>
+              </div>
+            </div>
+            <div class="preview__body">
+              <div class="preview__flex">
+                <div class="preview__form">
+                  <h4>Pedir cotización</h4>
+                  <div class="cols"> 
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Nombre</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Apellido </div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Teléfono</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Email</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Dirección</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Color del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">Rojo</option>
+                            <option value="2">Verde</option>
+                            <option value="3">Azul</option>
+                            <option value="4">Morado</option>
+                            <option value="5">Gris</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Material del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">Montana choc</option>
+                            <option value="2">Riga oliva</option>
+                            <option value="3">Leon plaster</option>
+                            <option value="4">Montana camel</option>
+                            <option value="5">Fargo verde</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Tamaño del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">1.80 x 2.56</option>
+                            <option value="2">1.90 x 2.80</option>
+                            <option value="3">2 x 3</option>
+                            <option value="4">2.15 x 3.20</option>
+                            <option value="5">2.30 x 3.45</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form__element"> 
+                        <div class="form__title">Mensaje</div>
+                        <div class="form__input"> 
+                          <textarea type="text" name="#"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form__button"> 
+                        <button class="btn">Solicitar cotización</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__bg">
+        <div class="bg"><img src="img/uploads/footer_bg.jpeg"></div>
+      </div>
+      <div class="footer__wrap">
+        <div class="footer__banner">
+          <div class="footer__body">
+            <h3 class="h2 footer__title">Si tienes dudas o consultas, comunicate con nosotros</h3>
+            <div class="footer__button"> <a href="contact.html" class="btn">Contactar</a></div>
+          </div>
+        </div>
+        <div class="footer__links footer_links--primary">
+          <div class="cols">
+            <div class="footer__flex">
+              <div class="col-sm-6 col-md-4">
+                <div class="footer__logo"><img src="img/icons/logo-lareina.png"></div>
+                <div class="footer__links__contact">
+                  <p class="footer__description">Para consultas escríbenos en nuestra sección de Contacto o al télefono</p>
+                  <p class="footer__description">(56 2) 2555 3795<span class="fa fa-phone"></span></p>
+                  <p class="footer__description">(56 2) 2556 5988<span class="fa fa-phone"></span></p>
+                  <p class="footer__description">lareina@mueblesencuero.cl<span class="fa fa-envelope"></span></p>
+                  <p class="footer__description">Carmen 2001, Santiago, Chile<span class="fa fa-map"></span></p>
+                </div>
+                <div class="footer__social">
+                  <ul>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="footer__links__list">
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="#">Materiales</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div data-lng="-70.6355988" data-lat="-33.471392" class="footer__map footer--map">
+                  <div class="footer__map__map">
+                    <div id="map"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="footer__info">
+                <p class="footer__description">© Copyright 2021 - Cueros La Reina. Todos los derechos reservados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

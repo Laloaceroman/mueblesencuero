@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Muebles en Cuero</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=73167" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=73167" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script>
+      var URL_SITE = "http://127.0.0.1:5501/frontend";
+      
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__bar">
+                  <div class="header__logo"><a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="materials.html">Materiales</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                  </ul>
+                  <div class="header__button"> <a href="contact.html" class="btn">Contacto </a></div>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+              <div class="header__item"><a href="contact.html" class="btn">Contacto</a></div>
+              <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-whatsapp"></span></a></div>
+              <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-instagram"></span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--main section-slider section--dark">
+        <div class="carousel">
+          <div class="section-slider_slides">
+            <div class="carousel-contents">
+              <div class="carousel-content">
+                <div class="section__video">
+                  <video id="myvideo" playsinline autoplay muted loop>
+                    <source src="videos/video-1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="section__wrap section__wrap--main">
+                  <div class="section__body">
+                    <div class="section__body__va">
+                      <h1 class="section__title">Descubre nuestros increíbles trabajos para ti</h1>
+                      <p class="section__description">Facilisis rutrum hendrerit quam colus quam phasellus elementum eros lobortis eget egestas aliquet per consectetur.
+                      </p>
+                      <div class="section__buttons"><a class="btn">Ver productos<span class="fa fa-angle-right"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-content">
+                <div class="section__bg">
+                  <div class="bg"><img src="img/uploads/1.jpeg"></div>
+                </div>
+                <div class="section__wrap section__wrap--main">
+                  <div class="section__body">
+                    <div class="section__body__va">
+                      <h2 class="h1 section__title">Sofá Marco</h2>
+                      <p class="section__description">Etiam malesuada ligula suscipit egestas cras lobortis donec duis iaculis malesuada sociosqu potenti curabitur nisi.
+                      </p>
+                      <div class="section__buttons"><a href="#" class="btn">Ver producto<span class="fa fa-angle-right"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-content">
+                <div class="section__bg">
+                  <div class="bg"><img src="img/uploads/2.jpeg"></div>
+                </div>
+                <div class="section__wrap section__wrap--main">
+                  <div class="section__body">
+                    <div class="section__body__va">
+                      <h2 class="h1 section__title">Sofá Cadiz Low</h2>
+                      <p class="section__description">Fringilla et lacinia ullamcorper phasellus sapien tempus habitant platea aliquet adipiscing tortor condimentum iaculis vulputate.
+                      </p>
+                      <div class="section__buttons"><a href="#" class="btn">Ver producto<span class="fa fa-angle-right"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-slider__thumbs section__thumbs">
+              <div class="carousel-thumbnails">
+                <div class="cols cols-gutter-0">
+                  <div class="col-xs-4 col-md-4 col-lg-4 carousel-thumbnail dscroll">
+                    <div class="section__thumb">
+                      <div class="section__thumb__bg"> 
+                        <div class="bg"> <img src="img/uploads/3.png"></div>
+                      </div>
+                      <div class="section__thumb__number">1</div>
+                      <div class="section__thumb__body">
+                        <div class="section__thumb__bar"></div>
+                        <div class="section__thumb__title">Descubre nuestros increíbles trabajos para ti</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-md-4 col-lg-4 carousel-thumbnail dscroll">
+                    <div class="section__thumb">
+                      <div class="section__thumb__bg"> 
+                        <div class="bg"> <img src="img/uploads/1.jpeg"></div>
+                      </div>
+                      <div class="section__thumb__number">2</div>
+                      <div class="section__thumb__body">
+                        <div class="section__thumb__bar"></div>
+                        <div class="section__thumb__title">Sofá Marco</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 col-md-4 col-lg-4 carousel-thumbnail dscroll">
+                    <div class="section__thumb">
+                      <div class="section__thumb__bg"> 
+                        <div class="bg"> <img src="img/uploads/2.jpeg"></div>
+                      </div>
+                      <div class="section__thumb__number">3</div>
+                      <div class="section__thumb__body">
+                        <div class="section__thumb__bar"></div>
+                        <div class="section__thumb__title">Sofá Cadiz Low</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--media section--media--right section--light">
+        <div class="section__wrap">
+          <div class="cols"> 
+            <div class="section__flex"> 
+              <div class="col-md-8 dscroll"> 
+                <div class="section__bg"> 
+                  <div class="bg"> <img src="img/uploads/4.jpeg"></div>
+                </div>
+              </div>
+              <div class="col-md-4 dscroll">
+                <div class="section__content"> 
+                  <h3 class="section__title">Quienes somos </h3>
+                  <p class="section__description">Arcu platea volutpat ante luctus tellus pulvinar purus faucibus elit. Nam ad congue praesent imperdiet sagittis habitasse laoreet nullam posuere elementum congue nulla praesent bibendum.
+                  </p>
+                  <p class="section__description">Pharetra luctus velit orci faucibus fusce varius curae curabitur cras in facilisis sem convallis nibh.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--media">
+        <div class="section__wrap">
+          <div class="cols"> 
+            <div class="section__flex"> 
+              <div class="col-md-8 col-md-push-4 dscroll">
+                <div class="section__bg"> 
+                  <div class="bg"> <img src="img/uploads/5.jpeg"></div>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-pull-8 dscroll">
+                <div class="section__content"> 
+                  <h3 class="section__title">Los mejores materiales</h3>
+                  <p class="section__description">Ultricies inceptos colus per lobortis taciti aliquam sem hac netus. Semper dui himenaeos dapibus non est aptent cursus a rutrum sem quam elementum fames mauris.
+                  </p>
+                  <p class="section__description">Ad donec ut primis malesuada curabitur orci accumsan donec morbi. Augue venenatis quisque elementum inceptos nostra hendrerit luctus pharetra quam suscipit suspendisse orci nunc pellentesque.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--media section--media--right section--light">
+        <div class="section__wrap">
+          <div class="cols"> 
+            <div class="section__flex"> 
+              <div class="col-md-8 dscroll"> 
+                <div class="section__bg"> 
+                  <div class="bg"> <img src="img/uploads/6.jpeg"></div>
+                </div>
+              </div>
+              <div class="col-md-4 dscroll">
+                <div class="section__content"> 
+                  <h3 class="section__title">10 Años de experiencia</h3>
+                  <p class="section__description">Ullamcorper habitant quisque mi fames scelerisque arcu sollicitudin quis vitae. Lacinia auctor iaculis platea congue sollicitudin hendrerit tempus faucibus convallis primis aptent eleifend massa risus.
+                  </p>
+                  <p class="section__description">Posuere arcu neque sollicitudin donec ut sollicitudin posuere habitasse erat ligula pellentesque tortor est quisque.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--features">
+        <div class="section__wrap">
+          <div class="section__header"> 
+            <h3 class="h2 section__title">Ventajas</h3>
+            <p class="section__description">Curabitur nec convallis bibendum quam dictum quam metus sem quam lobortis scelerisque elementum nulla adipiscing.
+            </p>
+          </div>
+          <div class="section__body"> 
+            <div class="cols">
+              <div class="col-xs-12 col-md-4 dscroll">
+                <article class="article--feature"> 
+                  <div class="article__icon"><img src="img/icons/1.png"></div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Despacho a todo chile</h4>
+                    <p class="article__description">Congue donec feugiat torquent lacinia cras vel cubilia donec ut
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 dscroll">
+                <article class="article--feature"> 
+                  <div class="article__icon"><img src="img/icons/2.png"></div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Valores para todo gusto</h4>
+                    <p class="article__description">Quis pretium nostra curabitur imperdiet duis molestie purus turpis accumsan
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-4 dscroll">
+                <article class="article--feature"> 
+                  <div class="article__icon"><img src="img/icons/3.png"></div>
+                  <div class="article__body"> 
+                    <h4 class="article__title">Trabajo de calidad</h4>
+                    <p class="article__description">Quis dictumst auctor lectus quis luctus sapien nunc taciti pulvinar
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--products section--light"> 
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h2 class="section__title">Productos Destacados</h2>
+          </div>
+          <div class="section__body">
+            <div class="section__tabs"> 
+              <div class="tabs"> 
+                <div class="tabs__header"> 
+                  <div class="tab tab--current">Destacados</div>
+                  <div class="tab">Bergeres</div>
+                  <div class="tab">Seleccionales</div>
+                  <div class="tab">Banquetas</div>
+                </div>
+                <div class="tabs__body"> 
+                  <div class="tab tab--current">
+                    <div class="cols">
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/1.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sitial Victoriano</h3>
+                            <p class="article__description">Nec sed eleifend curabitur diam aenean aliquam in sapien per viverra mollis.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article data-id="02" class="article--product">
+                          <div class="article__bg"> <img src="img/products/2.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Fran</h3>
+                            <p class="article__description">Mi volutpat elit curae lobortis dui blandit justo cras etiam fames malesuada.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="03" class="article--product">
+                          <div class="article__bg"> <img src="img/products/3.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Caballete</h3>
+                            <p class="article__description">Iaculis bibendum habitant massa faucibus et aliquam ultrices arcu urna donec feugiat.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/4.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Berger JM</h3>
+                            <p class="article__description">Eu rhoncus egestas pharetra taciti taciti fames tincidunt pretium euismod dictumst dictum.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/5.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sofá Cadiz Low</h3>
+                            <p class="article__description">Etiam pulvinar sed quam platea pellentesque nisi aliquet inceptos leo rutrum ad.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/6.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Poltrona Club</h3>
+                            <p class="article__description">Curabitur pulvinar pretium etiam dictumst pharetra torquent purus curabitur quisque dictumst per.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <div class="cols">
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article class="article--product">
+                          <div class="article__bg"> <img src="img/products/5.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sitial Victoriano</h3>
+                            <p class="article__description">Bibendum curabitur venenatis venenatis bibendum feugiat aliquam etiam nisi netus interdum vivamus.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/4.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Fran</h3>
+                            <p class="article__description">Pharetra convallis tempus congue eget varius eros ante nec velit nunc rhoncus.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/2.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Caballete</h3>
+                            <p class="article__description">Pretium nisl laoreet odio quisque lacus hac cursus cubilia quisque id class.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/3.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Berger JM</h3>
+                            <p class="article__description">Tempor nunc urna porta platea non euismod nunc torquent bibendum ullamcorper commodo.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/6.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sofá Cadiz Low</h3>
+                            <p class="article__description">Ligula convallis praesent mollis mollis elementum rhoncus hac potenti placerat bibendum mi.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/1.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Poltrona Club</h3>
+                            <p class="article__description">Metus convallis enim urna cubilia id sodales nostra nostra morbi lectus colus.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <div class="cols">
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article class="article--product">
+                          <div class="article__bg"> <img src="img/products/1.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sitial Victoriano</h3>
+                            <p class="article__description">Elit vivamus quam non vitae urna feugiat vel risus himenaeos litora tellus.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/2.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Fran</h3>
+                            <p class="article__description">Eleifend fusce inceptos quis eu eu morbi aenean est mi phasellus curabitur.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/3.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Caballete</h3>
+                            <p class="article__description">Viverra curabitur proin ut dui himenaeos faucibus netus class vehicula odio dictumst.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/4.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Berger JM</h3>
+                            <p class="article__description">Accumsan pretium sodales sollicitudin metus lobortis nostra blandit inceptos vestibulum adipiscing ornare.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/5.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sofá Cadiz Low</h3>
+                            <p class="article__description">Nibh nec at est scelerisque adipiscing arcu ultrices accumsan augue nisi congue.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/6.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Poltrona Club</h3>
+                            <p class="article__description">Eros quis dictum neque cras erat imperdiet congue senectus cubilia per convallis.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <div class="cols">
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article class="article--product">
+                          <div class="article__bg"> <img src="img/products/6.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sitial Victoriano</h3>
+                            <p class="article__description">Taciti nec sapien risus mauris ullamcorper maecenas feugiat suspendisse at fames rutrum.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-12 col-md-6 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/5.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Fran</h3>
+                            <p class="article__description">Eu sodales mi accumsan tempor adipiscing aliquam sollicitudin odio nunc quis egestas.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/4.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Banqueta Caballete</h3>
+                            <p class="article__description">Lectus turpis senectus pellentesque quisque condimentum urna faucibus etiam magna at fames.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/3.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Berger JM</h3>
+                            <p class="article__description">Dui fermentum urna ornare aliquam eget nostra ante convallis suspendisse laoreet habitant.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/2.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Sofá Cadiz Low</h3>
+                            <p class="article__description">Volutpat aenean quisque eleifend est scelerisque taciti integer phasellus mauris sollicitudin quis.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                      <div class="col-xs-6 col-md-3 dscroll"> 
+                        <article data-id="01" class="article--product">
+                          <div class="article__bg"> <img src="img/products/1.jpeg"></div>
+                          <div class="article__body"> 
+                            <h3 class="article__title">Poltrona Club</h3>
+                            <p class="article__description">Sollicitudin taciti quis praesent nisi ultricies vehicula pretium tempus rutrum litora venenatis.
+                            </p>
+                            <div class="article__price">$850.000 - $1.250.000</div>
+                          </div>
+                          <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-preview-product class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__footer"> <a href="products.html" class="btn">Ver todos los productos <span class="fa fa-angle-right"></span></a></div>
+        </div>
+      </section>
+      <div class="preview">
+        <div class="preview__back"></div>
+        <div class="preview__front">
+          <div class="preview__box">
+            <div class="preview__close"><span class="fa fa-close"></span></div>
+            <div class="preview__img"><img src="img/products/5.jpeg"></div>
+            <div class="preview__header">
+              <div class="preview__header__content"><span>Sitial</span>
+                <h2>Sitial Victoriano</h2>
+                <p>Condimentum vivamus morbi leo vehicula odio odio consequat tincidunt placerat. Blandit interdum auctor nunc ad ullamcorper eros curabitur donec ornare. Conubia at metus varius diam etiam cras quisque ultrices cras. Eleifend dui sed luctus ante suspendisse ligula purus maecenas hendrerit dui sagittis sociosqu euismod sapien.
+                </p>
+              </div>
+              <div class="preview__header__action">
+                <p class="preview__price">$850.000 - $1.250.000</p><a href="single-product.html" class="btn btn--transparent">Ver más</a>
+              </div>
+            </div>
+            <div class="preview__body">
+              <div class="preview__flex">
+                <div class="preview__form">
+                  <h4>Pedir cotización</h4>
+                  <div class="cols"> 
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Nombre</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Apellido </div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Teléfono</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Email</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Dirección</div>
+                        <div class="form__input"> 
+                          <input type="text" name="#">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Color del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">Rojo</option>
+                            <option value="2">Verde</option>
+                            <option value="3">Azul</option>
+                            <option value="4">Morado</option>
+                            <option value="5">Gris</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Material del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">Montana choc</option>
+                            <option value="2">Riga oliva</option>
+                            <option value="3">Leon plaster</option>
+                            <option value="4">Montana camel</option>
+                            <option value="5">Fargo verde</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form__element"> 
+                        <div class="form__title">Tamaño del producto</div>
+                        <div class="form__input"> 
+                          <select name="option">
+                            <option value="1">1.80 x 2.56</option>
+                            <option value="2">1.90 x 2.80</option>
+                            <option value="3">2 x 3</option>
+                            <option value="4">2.15 x 3.20</option>
+                            <option value="5">2.30 x 3.45</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form__element"> 
+                        <div class="form__title">Mensaje</div>
+                        <div class="form__input"> 
+                          <textarea type="text" name="#"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form__button"> 
+                        <button class="btn">Solicitar cotización</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__bg">
+        <div class="bg"><img src="img/uploads/footer_bg.jpeg"></div>
+      </div>
+      <div class="footer__wrap">
+        <div class="footer__banner">
+          <div class="footer__body">
+            <h3 class="h2 footer__title">Si tienes dudas o consultas, comunicate con nosotros</h3>
+            <div class="footer__button"> <a href="contact.html" class="btn">Contactar</a></div>
+          </div>
+        </div>
+        <div class="footer__links footer_links--primary">
+          <div class="cols">
+            <div class="footer__flex">
+              <div class="col-sm-6 col-md-4">
+                <div class="footer__logo"><img src="img/icons/logo-lareina.png"></div>
+                <div class="footer__links__contact">
+                  <p class="footer__description">Para consultas escríbenos en nuestra sección de Contacto o al télefono</p>
+                  <p class="footer__description">(56 2) 2555 3795<span class="fa fa-phone"></span></p>
+                  <p class="footer__description">(56 2) 2556 5988<span class="fa fa-phone"></span></p>
+                  <p class="footer__description">lareina@mueblesencuero.cl<span class="fa fa-envelope"></span></p>
+                  <p class="footer__description">Carmen 2001, Santiago, Chile<span class="fa fa-map"></span></p>
+                </div>
+                <div class="footer__social">
+                  <ul>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="footer__links__list">
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="#">Materiales</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div data-lng="-70.6355988" data-lat="-33.471392" class="footer__map footer--map">
+                  <div class="footer__map__map">
+                    <div id="map"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="footer__info">
+                <p class="footer__description">© Copyright 2021 - Cueros La Reina. Todos los derechos reservados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
