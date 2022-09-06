@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=35370" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=49806" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=35370" type="text/javascript"></script>
+    <script src="js/main.js?v=49806" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -17,10 +17,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="#">
     <meta name="twitter:description" content="#">
-    <meta name="twitter:image" content="#">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="twitter:image" content="#"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!--mapbox-->
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
     <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
@@ -76,22 +75,64 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header">
-        <div class="section__wrap section__wrap--header">
-          <div class="cols">
-            <div class="section__flex"> 
-              <div class="col-md-8 col-md-push-4">
-                <div class="section__product"><img src="img/products/7.jpeg"></div>
-                <div class="section__value"> 
-                  <p class="section__description">Medidas Ancho 2.55cm - Profundidad 87cm - Altura 83cm</p><span class="section__price">$659.990</span>
+      <section class="section--product section--product-main section--lighter">
+        <div class="section__wrap">
+          <div class="cols"> 
+            <div class="section__flex">
+              <div class="col-md-5">
+                <div class="section__gallery">
+                  <div class="section__gallery__slider dscroll">
+                    <div class="slider">
+                      <div class="slides">
+                        <div class="slide"><img src="img/products/1.jpeg"></div>
+                        <div class="slide"><img src="img/products/2.jpeg"></div>
+                        <div class="slide"><img src="img/products/3.jpeg"></div>
+                        <div class="slide"><img src="img/products/4.jpeg"></div>
+                        <div class="slide"><img src="img/products/5.jpeg"></div>
+                        <div class="slide"><img src="img/products/6.jpeg"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__gallery__thumbs dscroll">
+                    <div class="section__gallery__thumb"><img src="img/products/1.jpeg"></div>
+                    <div class="section__gallery__thumb"><img src="img/products/2.jpeg"></div>
+                    <div class="section__gallery__thumb"><img src="img/products/3.jpeg"></div>
+                    <div class="section__gallery__thumb"><img src="img/products/4.jpeg"></div>
+                    <div class="section__gallery__thumb"><img src="img/products/5.jpeg"></div>
+                    <div class="section__gallery__thumb"><img src="img/products/6.jpeg"></div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 col-md-pull-8">
-                <div class="section__body">
-                  <div class="section__body__va">
-                    <h1 class="section__title">Sitial Victoriano</h1>
-                    <p class="section__description">Nullam nec est volutpat phasellus aliquam porta porta luctus augue colus morbi porta quisque litora fermentum felis platea tellus orci.
-                    </p>
+              <div class="col-md-7">
+                <div class="section__info">
+                  <div class="section__info__wrap">
+                    <div class="section__info__box">
+                      <div class="section__content">
+                        <h1 class="section__title">Sitial Victoriano</h1>
+                        <p class="section__description">Quis tortor ut platea at suspendisse per commodo rhoncus varius. Aliquam lacinia vivamus litora lobortis blandit hac facilisis id bibendum. Consequat per taciti bibendum ad eget sociosqu orci taciti convallis platea tempor ut non diam.
+                        </p>
+                        <p class="section__description">Malesuada nostra pellentesque nunc netus lobortis dapibus netus nunc sagittis. Maecenas eget elit luctus pretium suscipit neque tristique ut risus viverra ut pretium hendrerit porttitor.
+                        </p>
+                        <div class="section__tabs">
+                          <h4 class="section__title">Medidas</h4>
+                          <div class="tabs tabs--prices">
+                            <div class="tabs__header"> 
+                              <div class="tab tab--current">2.55cm x 87cm x 83cm</div>
+                              <div class="tab">2.95cm x 87cm x 83cm</div>
+                            </div>
+                            <div class="tabs__body"> 
+                              <div class="tab tab--current">
+                                <div class="section__price">$650.000<span>+iva</span></div>
+                              </div>
+                              <div class="tab">
+                                <div class="section__price">$850.000<span>+iva</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__buttons"> <a data-goto=".section--cotizador" class="btn">Cotizar producto</a><a href="#" class="btn btn--secondary">Quiero que me contacten</a></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -104,9 +145,9 @@
           <div class="section__body">
             <div class="section__content section--center">
               <h2 class="section__title">Descripción del producto </h2>
-              <p class="section__description">Aenean eleifend diam mattis aliquam ante eu nisl interdum nullam. Lobortis hendrerit nibh interdum arcu ac quisque dui placerat tortor. Ultricies turpis hac molestie nostra class ullamcorper quis scelerisque accumsan. Mauris suscipit fermentum tellus erat fermentum ligula etiam sem class. Orci commodo justo iaculis odio etiam inceptos vitae duis morbi. Praesent hendrerit habitasse dapibus ad donec habitasse fermentum massa platea. Vel in suspendisse a habitant auctor etiam justo ullamcorper etiam. Lacus nulla nam ultrices fermentum habitant fermentum nam luctus porttitor colus elit netus conubia urna.
+              <p class="section__description">Nostra class fames sed mi iaculis inceptos suspendisse tincidunt commodo. Class felis velit vivamus inceptos integer class facilisis lacus colus. Felis purus consequat vitae colus fringilla orci massa in aptent. Dapibus pellentesque scelerisque enim nullam fermentum turpis pulvinar vulputate hac. Rhoncus fames duis fusce mi dictumst placerat sociosqu vulputate taciti. Potenti cras vehicula ante consequat molestie quam feugiat integer accumsan. Elit hendrerit nostra consectetur platea praesent fringilla cubilia orci molestie. Taciti magna curae rhoncus hendrerit mi orci ut massa integer hac feugiat lacus et conubia.
               </p>
-              <p class="section__description">Vivamus porttitor enim lacinia nibh augue ut congue pellentesque placerat. Nam ac elit euismod lobortis habitasse duis euismod curabitur et. Feugiat magna fermentum hac accumsan leo fringilla etiam porta hendrerit. Ultricies fringilla torquent non sodales quisque vel feugiat et donec. Nibh commodo aenean ultricies nisl sem enim mattis taciti aenean. Molestie fusce metus posuere adipiscing imperdiet vehicula class quisque gravida augue metus a nibh gravida.
+              <p class="section__description">Ultricies odio cubilia odio aliquet quisque tristique ultrices suscipit nisi. Aenean donec dictumst fusce etiam et feugiat per nisl hac. Enim quisque etiam hendrerit sodales commodo augue semper donec aenean. At cubilia eros elit libero lacus consequat proin turpis donec. Ad tristique porta consequat porta magna urna libero condimentum sagittis. Sollicitudin lectus donec consequat volutpat nisl a lacus conubia litora cras interdum quam auctor blandit.
               </p>
             </div>
           </div>
@@ -255,7 +296,7 @@
             <div class="preview__header">
               <div class="preview__header__content"><span>Sitial</span>
                 <h2>Sitial Victoriano</h2>
-                <p>Himenaeos nisl nunc quisque vehicula per fames placerat quisque leo. Velit pulvinar tristique interdum vulputate consequat nisl malesuada dictumst netus. Vivamus ad ante suscipit curae auctor vulputate velit libero leo. Posuere dapibus ullamcorper per class mauris diam euismod hac facilisis euismod aliquam arcu ligula pretium.
+                <p>Magna quisque sodales litora varius enim aenean eget elit curabitur. Rhoncus pulvinar ut mattis urna condimentum aliquet condimentum senectus non. Colus ligula curae eros viverra purus inceptos volutpat leo ad. Morbi risus aliquet fringilla vel vel duis ornare diam inceptos praesent interdum at aenean inceptos.
                 </p>
               </div>
               <div class="preview__header__action">
