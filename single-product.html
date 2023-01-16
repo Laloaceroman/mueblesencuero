@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=49806" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=86572" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=49806" type="text/javascript"></script>
+    <script src="js/main.js?v=86572" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -31,6 +31,14 @@
   </head>
   <body>
     <header>
+      <div class="header__secondary">
+        <div class="header__wrap">
+          <div class="header__infos"> 
+            <p class="header__info">Correo: <span>lareina@mueblesencuero.cl</span></p>
+            <p class="header__info">Teléfono: <span>225553796</span></p>
+          </div>
+        </div>
+      </div>
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
@@ -53,12 +61,11 @@
                 <nav>
                   <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="products.html">Muebles</a></li>
+                    <li><a href="chesterfield.html">Chesterfield</a></li>
                     <li><a href="materials.html">Materiales</a></li>
-                    <li><a href="gallery.html">Galería</a></li>
-                    <li><a href="faq.html">Faq</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
-                  <div class="header__button"> <a href="contact.html" class="btn">Contacto </a></div>
                 </nav>
               </div>
             </div>
@@ -66,7 +73,6 @@
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
               </div>
-              <div class="header__item"><a href="contact.html" class="btn">Contacto</a></div>
               <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-whatsapp"></span></a></div>
               <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-instagram"></span></a></div>
             </div>
@@ -75,11 +81,11 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--product section--product-main section--lighter">
+      <section class="section--product">
         <div class="section__wrap">
-          <div class="cols"> 
+          <div class="cols">
             <div class="section__flex">
-              <div class="col-md-5">
+              <div class="col-md-6">
                 <div class="section__gallery">
                   <div class="section__gallery__slider dscroll">
                     <div class="slider">
@@ -103,35 +109,74 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-md-6">
                 <div class="section__info">
                   <div class="section__info__wrap">
                     <div class="section__info__box">
                       <div class="section__content">
                         <h1 class="section__title">Sitial Victoriano</h1>
-                        <p class="section__description">Quis tortor ut platea at suspendisse per commodo rhoncus varius. Aliquam lacinia vivamus litora lobortis blandit hac facilisis id bibendum. Consequat per taciti bibendum ad eget sociosqu orci taciti convallis platea tempor ut non diam.
+                        <div class="section__features">
+                          <p class="section__feature">Valor desde: <span>$850.000</span></p>
+                          <p class="section__feature">Tamaño desde: <span>1.80m</span></p>
+                        </div>
+                        <p class="section__description">Senectus dictum egestas enim urna nunc pellentesque cras congue colus. Ultrices adipiscing curabitur bibendum lectus aliquam iaculis et felis nec. Platea enim vestibulum inceptos faucibus nulla nibh volutpat sociosqu quam arcu purus vel ultricies netus.
                         </p>
-                        <p class="section__description">Malesuada nostra pellentesque nunc netus lobortis dapibus netus nunc sagittis. Maecenas eget elit luctus pretium suscipit neque tristique ut risus viverra ut pretium hendrerit porttitor.
-                        </p>
-                        <div class="section__tabs">
-                          <h4 class="section__title">Medidas</h4>
-                          <div class="tabs tabs--prices">
-                            <div class="tabs__header"> 
-                              <div class="tab tab--current">2.55cm x 87cm x 83cm</div>
-                              <div class="tab">2.95cm x 87cm x 83cm</div>
-                            </div>
-                            <div class="tabs__body"> 
-                              <div class="tab tab--current">
-                                <div class="section__price">$650.000<span>+iva</span></div>
+                      </div>
+                      <div class="section__faq">
+                        <div class="faq">
+                          <div class="faq__item">
+                            <h3 class="faq__question"><span class="fa fa-angle-down"></span>Detalles</h3>
+                            <div class="faq__answer">
+                              <div class="section__content">
+                                <p>Ultricies adipiscing vitae semper morbi justo aliquam ac vulputate massa. Nam diam odio dui vitae faucibus magna class etiam at sagittis luctus purus in velit.
+                                </p>
+                                <p>Mattis curae fusce rhoncus feugiat metus nam pharetra odio elit. Ante porttitor proin volutpat posuere risus platea curabitur felis in rhoncus aliquam tempus hac lacus.
+                                </p>
                               </div>
-                              <div class="tab">
-                                <div class="section__price">$850.000<span>+iva</span></div>
+                            </div>
+                          </div>
+                          <div class="faq__item">
+                            <h3 class="faq__question"><span class="fa fa-angle-down"></span>Dimensiones</h3>
+                            <div class="faq__answer">
+                              <div class="section__content">
+                                <p>Elit ultricies blandit aliquam ligula mollis proin mi aliquet colus. Sapien aliquet mattis malesuada fringilla quisque mollis massa congue nibh urna ullamcorper aptent aliquam venenatis.
+                                </p>
+                                <p>Molestie ac habitant nullam convallis etiam dictumst sem eros dictum. Cursus tincidunt fringilla malesuada faucibus morbi purus rutrum ullamcorper felis curabitur velit mollis aptent condimentum.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="faq__item">
+                            <h3 class="faq__question"><span class="fa fa-angle-down"></span>Politicas</h3>
+                            <div class="faq__answer">
+                              <div class="section__content">
+                                <p>Inceptos tellus aenean proin dapibus viverra et metus colus vulputate. Donec nisi cursus sapien dictumst fusce nunc lectus gravida hac scelerisque purus neque pellentesque torquent.
+                                </p>
+                                <p>Quisque luctus suscipit etiam per lobortis sollicitudin donec potenti dui. Dui torquent facilisis metus duis varius praesent vel mauris auctor scelerisque fames purus auctor enim.
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="section__buttons"> <a data-goto=".section--cotizador" class="btn">Cotizar producto</a><a href="#" class="btn btn--secondary">Quiero que me contacten</a></div>
                       </div>
+                      <div class="section__tabs">
+                        <h4 class="section__title">Medidas</h4>
+                        <div class="tabs tabs--prices">
+                          <div class="tabs__header">
+                            <div class="tab tab--current">2.55cm x 87cm x 83cm</div>
+                            <div class="tab">2.95cm x 87cm x 83cm</div>
+                          </div>
+                          <div class="tabs__body">
+                            <div class="tab tab--current">
+                              <div class="section__price">$650.000<span>+iva</span></div>
+                            </div>
+                            <div class="tab">
+                              <div class="section__price">$850.000<span>+iva</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="section__button"> <a data-goto=".section--cotizador" class="btn">Cotizar producto<span class="fa fa-angle-down"></span></a></div>
                     </div>
                   </div>
                 </div>
@@ -140,45 +185,6 @@
           </div>
         </div>
       </section>
-      <section class="section--content section--light"> 
-        <div class="section__wrap section--md">
-          <div class="section__body">
-            <div class="section__content section--center">
-              <h2 class="section__title">Descripción del producto </h2>
-              <p class="section__description">Nostra class fames sed mi iaculis inceptos suspendisse tincidunt commodo. Class felis velit vivamus inceptos integer class facilisis lacus colus. Felis purus consequat vitae colus fringilla orci massa in aptent. Dapibus pellentesque scelerisque enim nullam fermentum turpis pulvinar vulputate hac. Rhoncus fames duis fusce mi dictumst placerat sociosqu vulputate taciti. Potenti cras vehicula ante consequat molestie quam feugiat integer accumsan. Elit hendrerit nostra consectetur platea praesent fringilla cubilia orci molestie. Taciti magna curae rhoncus hendrerit mi orci ut massa integer hac feugiat lacus et conubia.
-              </p>
-              <p class="section__description">Ultricies odio cubilia odio aliquet quisque tristique ultrices suscipit nisi. Aenean donec dictumst fusce etiam et feugiat per nisl hac. Enim quisque etiam hendrerit sodales commodo augue semper donec aenean. At cubilia eros elit libero lacus consequat proin turpis donec. Ad tristique porta consequat porta magna urna libero condimentum sagittis. Sollicitudin lectus donec consequat volutpat nisl a lacus conubia litora cras interdum quam auctor blandit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--section.section--gallery 
-      .section__wrap
-      	.section__header 
-      		h2.section__title Galería
-      	.section__body 
-      		.section__slider
-      			.slider 
-      				.slides 
-      					.slide 
-      						.section__bg 
-      							.bg 
-      								img(src="img/gallery/1.jpeg")
-      					.slide 
-      						.section__bg 
-      							.bg
-      								img(src="img/gallery/2.jpeg")
-      					.slide 
-      						.section__bg 
-      							.bg
-      								img(src="img/gallery/3.jpeg")
-      					.slide 
-      						.section__bg 
-      							.bg
-      								img(src="img/gallery/4.jpeg")
-      
-      -->
       <section class="section--cotizador"> 
         <div class="section__wrap section--sm"> 
           <div class="section__header"> 
@@ -219,43 +225,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6"> 
-                  <div class="form__element"> 
-                    <div class="form__title">Dirección</div>
-                    <div class="form__input"> 
-                      <input type="text" name="#">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6"> 
-                  <div class="form__element"> 
-                    <div class="form__title">Color del producto</div>
-                    <div class="form__input"> 
-                      <select name="option">
-                        <option value="1">Rojo</option>
-                        <option value="2">Verde</option>
-                        <option value="3">Azul</option>
-                        <option value="4">Morado</option>
-                        <option value="5">Gris</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6"> 
-                  <div class="form__element"> 
-                    <div class="form__title">Material del producto</div>
-                    <div class="form__input"> 
-                      <select name="option">
-                        <option value="1">Montana choc</option>
-                        <option value="2">Riga oliva</option>
-                        <option value="3">Leon plaster</option>
-                        <option value="4">Montana camel</option>
-                        <option value="5">Fargo verde</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6"> 
+                <div class="col-md-12">
                   <div class="form__element"> 
                     <div class="form__title">Tamaño del producto</div>
                     <div class="form__input"> 
@@ -279,9 +249,62 @@
                 </div>
                 <div class="col-md-12">
                   <div class="form__button"> 
-                    <button class="btn">Solicitar cotización</button>
+                    <button class="btn">Solicitar cotización<span class="fa fa-angle-right"></span></button>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--products section--light"> 
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h2 class="section__title">Productos Relacionados</h2>
+          </div>
+          <div class="section__body">
+            <div class="cols">
+              <div class="col-xs-6 col-md-4 dscroll"> 
+                <article data-id="01" class="article--product">
+                  <div class="article__bg"> <img src="img/products/3.jpeg"></div>
+                  <div class="article__body"> 
+                    <h3 class="article__title">Berger JM</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
+                    <div class="article__price">Desde <span>$850.000</span></div>
+                  </div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-4 dscroll"> 
+                <article data-id="01" class="article--product">
+                  <div class="article__bg"> <img src="img/products/2.jpeg"></div>
+                  <div class="article__body"> 
+                    <h3 class="article__title">Sofá Cadiz Low</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
+                    <div class="article__price">Desde <span>$850.000</span></div>
+                  </div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
+                </article>
+              </div>
+              <div class="col-xs-6 col-md-4 dscroll"> 
+                <article data-id="01" class="article--product">
+                  <div class="article__bg"> <img src="img/products/1.jpeg"></div>
+                  <div class="article__body"> 
+                    <h3 class="article__title">Poltrona Club</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
+                    <div class="article__price">Desde <span>$850.000</span></div>
+                  </div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
+                </article>
               </div>
             </div>
           </div>
@@ -296,7 +319,7 @@
             <div class="preview__header">
               <div class="preview__header__content"><span>Sitial</span>
                 <h2>Sitial Victoriano</h2>
-                <p>Magna quisque sodales litora varius enim aenean eget elit curabitur. Rhoncus pulvinar ut mattis urna condimentum aliquet condimentum senectus non. Colus ligula curae eros viverra purus inceptos volutpat leo ad. Morbi risus aliquet fringilla vel vel duis ornare diam inceptos praesent interdum at aenean inceptos.
+                <p>Venenatis egestas dapibus vehicula commodo ut elit cursus praesent convallis. Duis lectus rutrum per enim accumsan tristique commodo fusce auctor. Sollicitudin ullamcorper augue tortor placerat et tristique habitant iaculis et. Ultrices eu fringilla conubia habitant erat lacus venenatis arcu porta aliquam suscipit nostra id mauris.
                 </p>
               </div>
               <div class="preview__header__action">
@@ -412,61 +435,55 @@
       </div>
     </div>
     <footer>
-      <div class="footer__bg">
-        <div class="bg"><img src="img/uploads/footer_bg.jpeg"></div>
-      </div>
-      <div class="footer__wrap">
-        <div class="footer__banner">
-          <div class="footer__body">
-            <h3 class="h2 footer__title">Si tienes dudas o consultas, comunicate con nosotros</h3>
-            <div class="footer__button"> <a href="contact.html" class="btn">Contactar</a></div>
-          </div>
-        </div>
-        <div class="footer__links footer_links--primary">
+      <div class="footer__primary">
+        <div class="footer__card"> <img src="img/icons/image-card.png"></div>
+        <div class="footer__wrap">
           <div class="cols">
             <div class="footer__flex">
-              <div class="col-sm-6 col-md-4">
-                <div class="footer__logo"><img src="img/icons/logo-lareina.png"></div>
-                <div class="footer__links__contact">
-                  <p class="footer__description">Para consultas escríbenos en nuestra sección de Contacto o al télefono</p>
-                  <p class="footer__description">(56 2) 2555 3795<span class="fa fa-phone"></span></p>
-                  <p class="footer__description">(56 2) 2556 5988<span class="fa fa-phone"></span></p>
-                  <p class="footer__description">lareina@mueblesencuero.cl<span class="fa fa-envelope"></span></p>
-                  <p class="footer__description">Carmen 2001, Santiago, Chile<span class="fa fa-map"></span></p>
-                </div>
-                <div class="footer__social">
-                  <ul>
-                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
-                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                  </ul>
+              <div class="col-md-4"> 
+                <div class="footer__infos"> 
+                  <h4 class="footer__title">Información de Contacto </h4>
+                  <p class="footer__description">Fabrica: Carmen 2001 - Santiago Centro</p>
+                  <p class="footer__description">Correo: lareina@mueblesencuero.cl</p>
+                  <p class="footer__description">Fono: 22 557 27 05</p>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="footer__links__list">
-                  <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="products.html">Productos</a></li>
-                    <li><a href="#">Materiales</a></li>
-                    <li><a href="gallery.html">Galería</a></li>
-                    <li><a href="faq.html">Faq</a></li>
-                  </ul>
+              <div class="col-md-4">
+                <div class="footer__center"> 
+                  <div class="footer__logo"> <a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+                  <div class="footer__socials"> 
+                    <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>
+                    <div class="footer__social"> <a href="#"><span class="fa fa-whatsapp"></span></a></div>
+                    <div class="footer__social"> <a href="#"><span class="fa fa-envelope"></span></a></div>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-5">
-                <div data-lng="-70.6355988" data-lat="-33.471392" class="footer__map footer--map">
-                  <div class="footer__map__map">
-                    <div id="map"> </div>
+              <div class="col-md-4">
+                <div class="footer__newsletter"> 
+                  <h4 class="footer__title">“Newsleatter La Reina”</h4>
+                  <p class="footer__description">Suscribete para recivir las ultimas noticias de <strong>La Reina Muebles en Cuero.</strong></p>
+                  <div class="footer__form"> 
+                    <form action="POST">
+                      <div class="form__element"> 
+                        <div class="form__input"> 
+                          <input type="text" name="email" placeholder="Tu correo aquí">
+                        </div>
+                      </div>
+                      <div class="form__button"> 
+                        <button class="btn btn--gold">Enviar<span class="fa fa-angle-right"></span></button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12">
-              <div class="footer__info">
-                <p class="footer__description">© Copyright 2021 - Cueros La Reina. Todos los derechos reservados</p>
-              </div>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__secondary">
+        <div class="footer__wrap footer__wrap--sm">
+          <div class="footer__copyright">	
+            <p>2023 La Reina Muebles en Cuero. Todo los derechos reservados.</p>
           </div>
         </div>
       </div>

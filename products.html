@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=43561" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=11549" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=43561" type="text/javascript"></script>
+    <script src="js/main.js?v=11549" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -31,6 +31,14 @@
   </head>
   <body>
     <header>
+      <div class="header__secondary">
+        <div class="header__wrap">
+          <div class="header__infos"> 
+            <p class="header__info">Correo: <span>lareina@mueblesencuero.cl</span></p>
+            <p class="header__info">Teléfono: <span>225553796</span></p>
+          </div>
+        </div>
+      </div>
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
@@ -53,12 +61,11 @@
                 <nav>
                   <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="products.html">Muebles</a></li>
+                    <li><a href="chesterfield.html">Chesterfield</a></li>
                     <li><a href="materials.html">Materiales</a></li>
-                    <li><a href="gallery.html">Galería</a></li>
-                    <li><a href="faq.html">Faq</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                   </ul>
-                  <div class="header__button"> <a href="contact.html" class="btn">Contacto </a></div>
                 </nav>
               </div>
             </div>
@@ -66,7 +73,6 @@
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
               </div>
-              <div class="header__item"><a href="contact.html" class="btn">Contacto</a></div>
               <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-whatsapp"></span></a></div>
               <div class="header__item header__item--mobile"><a href="" class="btn btn--social"><span class="fa fa-instagram"></span></a></div>
             </div>
@@ -75,23 +81,10 @@
       </div>
     </header>
     <div id="sections">
-      <section class="section--header">
-        <div class="section__wrap section__wrap--header">
-          <div class="cols">
-            <div class="section__flex"> 
-              <div class="col-md-8 col-md-push-4">
-                <div class="section__product"><img src="img/products/7.jpeg"></div>
-              </div>
-              <div class="col-md-4 col-md-pull-8">
-                <div class="section__body">
-                  <div class="section__body__va">
-                    <h1 class="section__title">Productos</h1>
-                    <p class="section__description">Ullamcorper tellus turpis aliquet molestie phasellus duis faucibus hendrerit vestibulum faucibus dapibus inceptos litora odio nunc facilisis mi pharetra lacus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section class="section--chesterfield">
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h1 class="section__title">Muebles</h1>
           </div>
         </div>
       </section>
@@ -117,292 +110,316 @@
           </div>
           <div class="section__body">
             <div class="cols cols--sm grid">
-              <div class="col-xs-6 col-md-4 sitiales">
+              <div class="col-xs-12 col-md-6 sitiales">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/1.jpeg"></div>
                   <div class="article__body"> 
                     <h3 class="article__title">Sitial Victoriano</h3>
-                    <p class="article__description">Habitant mattis ultricies ut ultrices aenean donec habitasse pulvinar gravida at diam.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/2.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Fran</h3>
-                    <p class="article__description">Eros pellentesque eu blandit bibendum egestas leo aliquam maecenas pellentesque tellus quisque.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/3.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Caballete</h3>
-                    <p class="article__description">Augue volutpat urna nibh bibendum colus vel donec fermentum fermentum suspendisse interdum.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 bergeres">
+              <div class="col-xs-12 col-md-6 bergeres">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/4.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Berger JM</h3>
-                    <p class="article__description">Torquent imperdiet sagittis malesuada quis iaculis sociosqu mattis aptent maecenas ut adipiscing.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 sofas">
+              <div class="col-xs-12 col-md-6 sofas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/5.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Sofá Cadiz Low</h3>
-                    <p class="article__description">Accumsan tortor viverra lectus cras cubilia metus aliquet vivamus dictum nec euismod.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 poltronas">
+              <div class="col-xs-12 col-md-6 poltronas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/6.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Poltrona Club</h3>
-                    <p class="article__description">Dictumst sem viverra varius donec nibh enim sodales placerat lectus lacus conubia.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 sitiales">
+              <div class="col-xs-12 col-md-6 sitiales">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/1.jpeg"></div>
                   <div class="article__body"> 
                     <h3 class="article__title">Sitial Victoriano</h3>
-                    <p class="article__description">Class viverra habitant eu risus lobortis cursus at proin metus pulvinar maecenas.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/2.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Fran</h3>
-                    <p class="article__description">Etiam consectetur fermentum lacinia erat cubilia tincidunt ultrices lacus pellentesque urna vulputate.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/3.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Caballete</h3>
-                    <p class="article__description">Massa fames curabitur quisque donec lacinia curabitur nibh tortor convallis sapien pretium.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 bergeres">
+              <div class="col-xs-12 col-md-6 bergeres">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/4.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Berger JM</h3>
-                    <p class="article__description">Vitae taciti etiam consequat tempor dictum sapien quisque quisque primis phasellus tristique.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 sofas">
+              <div class="col-xs-12 col-md-6 sofas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/5.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Sofá Cadiz Low</h3>
-                    <p class="article__description">Habitant cras libero mauris eu condimentum dui phasellus quisque lectus posuere lacus.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 poltronas">
+              <div class="col-xs-12 col-md-6 poltronas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/6.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Poltrona Club</h3>
-                    <p class="article__description">Non curae suspendisse consequat taciti pellentesque quisque facilisis nostra tortor duis hendrerit.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 sitiales">
+              <div class="col-xs-12 col-md-6 sitiales">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/1.jpeg"></div>
                   <div class="article__body"> 
                     <h3 class="article__title">Sitial Victoriano</h3>
-                    <p class="article__description">Nec lacus nulla eleifend aliquam risus phasellus potenti turpis feugiat dictumst curae.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/2.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Fran</h3>
-                    <p class="article__description">Quam consectetur ac nostra lacus mattis accumsan purus aliquam enim tellus purus.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/3.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Caballete</h3>
-                    <p class="article__description">Aenean tempor rutrum conubia commodo lacus quam tincidunt elit dictum ad bibendum.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 bergeres">
+              <div class="col-xs-12 col-md-6 bergeres">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/4.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Berger JM</h3>
-                    <p class="article__description">Integer dui urna cras gravida aliquam nam facilisis pellentesque taciti mi curabitur.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 sofas">
+              <div class="col-xs-12 col-md-6 sofas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/5.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Sofá Cadiz Low</h3>
-                    <p class="article__description">Augue tempus platea mattis adipiscing nam felis euismod tristique ultrices vivamus netus.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 poltronas">
+              <div class="col-xs-12 col-md-6 poltronas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/6.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Poltrona Club</h3>
-                    <p class="article__description">Urna facilisis ultricies quisque consequat blandit cursus netus vel platea nisi gravida.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 sitiales">
+              <div class="col-xs-12 col-md-6 sitiales">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/1.jpeg"></div>
                   <div class="article__body"> 
                     <h3 class="article__title">Sitial Victoriano</h3>
-                    <p class="article__description">Nisi litora fermentum metus vitae aliquet aptent conubia vehicula tempor diam at.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/2.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Fran</h3>
-                    <p class="article__description">Nostra class sodales non nam aenean metus tincidunt himenaeos nec neque tortor.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 banquetas">
+              <div class="col-xs-12 col-md-6 banquetas">
                 <article class="article--product">
                   <div class="article__bg"> <img src="img/products/3.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Banqueta Caballete</h3>
-                    <p class="article__description">Urna velit nisl senectus hendrerit tincidunt commodo donec semper tristique turpis at.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 bergeres">
+              <div class="col-xs-12 col-md-6 bergeres">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/4.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Berger JM</h3>
-                    <p class="article__description">Imperdiet aenean id dictumst eget at potenti lacinia quam urna lobortis netus.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 sofas">
+              <div class="col-xs-12 col-md-6 sofas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/5.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Sofá Cadiz Low</h3>
-                    <p class="article__description">Nec posuere consectetur vel quisque posuere posuere ut dui ad rutrum auctor.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
-              <div class="col-xs-6 col-md-4 poltronas">
+              <div class="col-xs-12 col-md-6 poltronas">
                 <article class="article--product"> 
                   <div class="article__bg"> <img src="img/products/6.jpeg"></div>
                   <div class="article__body"> 
-                    <h3 class="article__title">Poltrona Club</h3>
-                    <p class="article__description">Sed euismod inceptos molestie facilisis netus aptent vel euismod enim ut nam.
-                    </p>
-                    <div class="article__price">$850.000 - $1.250.000</div>
+                    <h3 class="article__title">Sitial Victoriano</h3>
+                    <div class="article__features"> 
+                      <p class="article__feature">Valor desde:<span>$850.000</span></p>
+                      <p class="article__feature">Tamaño desde:<span>1.35m</span></p>
+                    </div>
                   </div>
-                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a><a data-modal-cotizador class="btn">Cotizar <span class="fa fa-angle-right"></span></a></div>
+                  <div class="article__buttons"><a href="single-product.html" class="btn">Ver más <span class="fa fa-angle-right"></span></a></div>
                 </article>
               </div>
             </div>
@@ -418,7 +435,7 @@
             <div class="preview__header">
               <div class="preview__header__content"><span>Sitial</span>
                 <h2>Sitial Victoriano</h2>
-                <p>Ad leo venenatis cursus cras arcu tempor turpis massa vel. Vel mi varius purus aliquam enim velit ultrices himenaeos lacus. Ligula risus tortor sapien feugiat curabitur malesuada lectus integer ac. Et pretium lacinia ullamcorper euismod sapien nullam primis orci curabitur quisque mi primis vivamus cursus.
+                <p>Vehicula suscipit rutrum ultrices vivamus dui integer ac varius donec. Fames consequat potenti hac habitasse habitasse sed augue consectetur faucibus. Rhoncus lacinia faucibus in volutpat mi platea litora fringilla dictumst. Sapien neque litora vehicula nec hac et interdum pellentesque massa cubilia velit inceptos elementum sem.
                 </p>
               </div>
               <div class="preview__header__action">
@@ -534,61 +551,55 @@
       </div>
     </div>
     <footer>
-      <div class="footer__bg">
-        <div class="bg"><img src="img/uploads/footer_bg.jpeg"></div>
-      </div>
-      <div class="footer__wrap">
-        <div class="footer__banner">
-          <div class="footer__body">
-            <h3 class="h2 footer__title">Si tienes dudas o consultas, comunicate con nosotros</h3>
-            <div class="footer__button"> <a href="contact.html" class="btn">Contactar</a></div>
-          </div>
-        </div>
-        <div class="footer__links footer_links--primary">
+      <div class="footer__primary">
+        <div class="footer__card"> <img src="img/icons/image-card.png"></div>
+        <div class="footer__wrap">
           <div class="cols">
             <div class="footer__flex">
-              <div class="col-sm-6 col-md-4">
-                <div class="footer__logo"><img src="img/icons/logo-lareina.png"></div>
-                <div class="footer__links__contact">
-                  <p class="footer__description">Para consultas escríbenos en nuestra sección de Contacto o al télefono</p>
-                  <p class="footer__description">(56 2) 2555 3795<span class="fa fa-phone"></span></p>
-                  <p class="footer__description">(56 2) 2556 5988<span class="fa fa-phone"></span></p>
-                  <p class="footer__description">lareina@mueblesencuero.cl<span class="fa fa-envelope"></span></p>
-                  <p class="footer__description">Carmen 2001, Santiago, Chile<span class="fa fa-map"></span></p>
-                </div>
-                <div class="footer__social">
-                  <ul>
-                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
-                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                  </ul>
+              <div class="col-md-4"> 
+                <div class="footer__infos"> 
+                  <h4 class="footer__title">Información de Contacto </h4>
+                  <p class="footer__description">Fabrica: Carmen 2001 - Santiago Centro</p>
+                  <p class="footer__description">Correo: lareina@mueblesencuero.cl</p>
+                  <p class="footer__description">Fono: 22 557 27 05</p>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="footer__links__list">
-                  <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="products.html">Productos</a></li>
-                    <li><a href="#">Materiales</a></li>
-                    <li><a href="gallery.html">Galería</a></li>
-                    <li><a href="faq.html">Faq</a></li>
-                  </ul>
+              <div class="col-md-4">
+                <div class="footer__center"> 
+                  <div class="footer__logo"> <a href="index.html"><img src="img/icons/logo-lareina.png"></a></div>
+                  <div class="footer__socials"> 
+                    <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>
+                    <div class="footer__social"> <a href="#"><span class="fa fa-whatsapp"></span></a></div>
+                    <div class="footer__social"> <a href="#"><span class="fa fa-envelope"></span></a></div>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-5">
-                <div data-lng="-70.6355988" data-lat="-33.471392" class="footer__map footer--map">
-                  <div class="footer__map__map">
-                    <div id="map"> </div>
+              <div class="col-md-4">
+                <div class="footer__newsletter"> 
+                  <h4 class="footer__title">“Newsleatter La Reina”</h4>
+                  <p class="footer__description">Suscribete para recivir las ultimas noticias de <strong>La Reina Muebles en Cuero.</strong></p>
+                  <div class="footer__form"> 
+                    <form action="POST">
+                      <div class="form__element"> 
+                        <div class="form__input"> 
+                          <input type="text" name="email" placeholder="Tu correo aquí">
+                        </div>
+                      </div>
+                      <div class="form__button"> 
+                        <button class="btn btn--gold">Enviar<span class="fa fa-angle-right"></span></button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12">
-              <div class="footer__info">
-                <p class="footer__description">© Copyright 2021 - Cueros La Reina. Todos los derechos reservados</p>
-              </div>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__secondary">
+        <div class="footer__wrap footer__wrap--sm">
+          <div class="footer__copyright">	
+            <p>2023 La Reina Muebles en Cuero. Todo los derechos reservados.</p>
           </div>
         </div>
       </div>
